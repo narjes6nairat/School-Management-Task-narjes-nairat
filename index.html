@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>School Managment System</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body class="center">
+		<div class="container center showimg">
+			<img src="./img/student.png" alt="student img">
+			<form>
+				<!-- student name -->
+				<div class="from-control">
+					<label for="name">Student Name</label>
+					<br/>
+					<input type="text" id="name" placeholder="narjes nairat" />
+				</div>
+				<!-- student name -->
+
+				<!-- student id -->
+				<div class="from-control">
+					<label for="idNumber">Student ID</label>
+					<br/>
+					<input type="number" id="idNumber" placeholder="11924053" />
+				</div>
+				<!-- student id -->
+
+				<!-- student gdpa -->
+				<div class="from-control">
+					<label for="gdpa">Student GDPA</label>
+					<br/>
+					<input type="number" id="gdpa" placeholder="3.24" />
+				</div>
+				<!-- student gdpa -->
+
+				<button id="submit"  type="submit">Add</button>
+				<!--<textarea name="txt_area" id="txt_area" cols="30" rows="10"></textarea>-->
+			</form>
+		</div>
+		<br>
+		<!--Delete -->
+		<div  class="from-control column">
+			<label for="idNumber">Student ID to delete</label> <br>
+			<input type="number" id="remove " placeholder="" />
+			<button id="submit" onclick="Delete();" >delete</button>
+		</div>
+		<!-- Delete end -->
+		
+		
+		<!-- Update -->
+		<div class="from-control column">
+			<label for="idNumber"> Student ID to update</label> <br>
+			<input type="number" id="idupdate" placeholder="" />
+			<button id="submit" onclick="check();" >check</button><br>
+			<div id="show">
+
+			<label for="name">Student Name</label> <br>
+			<input type="text" id="nameupdate" placeholder="name" />
+			<br>
+			<label for="idNumber">Student ID</label> <br>
+			<input type="number" id="idupdate" placeholder="411420876" />
+			<br>
+			<label for="gdpa">Student GDPA</label> 
+			<br>
+			<input type="number" id="gpaupdate" placeholder="3.50" />
+			<br>
+			<button id="submit" onclick="Update();" >Update</button>
+		    </div>
+		</div>
+		<!-- Update end -->
+		<!--print-->
+		<button id="submit" onclick="print();" >print all studant</button>
+		<div id= "names" class="from-control column">		
+		</div>
+		<!-- print end -->
+		<script src="./main.js"></script>
+	</body>
+</html>
